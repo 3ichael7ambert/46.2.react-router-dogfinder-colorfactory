@@ -1,0 +1,40 @@
+.DogDetails {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.DogDetails img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  /* playful hover effect */
+  transition: transform 0.3s ease-in-out;
+}
+
+.DogDetails img:hover {
+  transform: scale(1.1);
+}
+
+.DogDetails ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.DogDetails li {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+/* Animated border */
+.DogDetails h1 {
+  border-bottom: 2px solid #f5a623;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  animation: borderAnimation 1s ease-in-out;
+}
+
+@keyframes borderAnimation {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
